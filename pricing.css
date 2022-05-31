@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+@font-face{
+	font-family: muli;
+	src: url("fonts/Muli.ttf");
+}
+
+@font-face{
+	font-family: muli-bold;
+	src: url("fonts/Muli-Bold.ttf");
+}
+
+@font-face{
+	font-family: muli-bolditalic;
+	src: url("fonts/Muli-BoldItalic.ttf");
+}
+
+@font-face{
+	font-family: muli-light;
+	src: url("fonts/Muli-Light.ttf");
+}
+@font-face{
+	font-family: muli-black;
+	src: url("fonts/Muli-Black.ttf");
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: muli, sans-serif;
+}
+
+.hero{
+	width: 100%;
+	height: 150px;
+	background-image: url(img/pricingbackground.jpg);
+}
+
+.features{
+	font-weight: bolder;
+}
+
+.header{
+	width: 100%;
+	height: 30px;
+	margin-left: 20px;
+	margin-right: 0px;
+	margin-top: 0px;
+	align-content: center;
+	padding: 10px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+	clear: both;}
+
+.header .login{
+	width: 63px;
+	height: auto;
+	background-color: white;
+	padding: 5px;
+	float: left;
+	border-radius: 14px;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+
+.header .login a{
+	color: black;
+	text-decoration: none;
+}
+
+.icon{
+	float: left;
+	width: 123px;
+	height: 34px;
+}
+
+
+.navbar{
+	width: 80%;
+    border:1px solid #ccc;
+    border-width:0px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+	text-align:center;
+	float: left;
+}
+.navbar li{
+    display:inline;
+    float: center;
+}
+.navbar li a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+
+/*.isihero{
+	width: 780px;
+	height: 291px;
+	float: center;
+	margin: auto;
+}*/
+
+.konten{
+	padding: 50px;
+}
+
+.content-header{
+	height: 200px;
+}
+
+.isiabout{
+	font-size: 35px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 50px;
+}
+.harga{
+	display: grid;
+	grid-template-columns: 400px 400px 400px;
+	align-items: start;
+	justify-content: center;
+	grid-column-gap: 40px;
+}
+
+.basic{
+	border-style: solid;
+	border-width: #969696px;
+}
+
+.judulbasic{
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #bfbfbf;
+	padding: 30px;
+}
+
+.judulbasic a, .judulpremium a, .judulpro a{
+	text-decoration: none;
+	background-color: #49bf39;
+	width: 300px;
+	padding:8px;
+	color: white;
+}
+
+.judulbasic a:hover{
+	filter: brightness(150%);
+}
+
+.judulpremium a:hover{
+	filter: brightness(150%);
+}
+
+.judulpro a:hover{
+	filter: brightness(150%);
+}
+
+.judulbasic h1, .judulpremium h1, .judulpro h1{
+	font-size: 30px;
+	font-weight: bolder;
+	text-align: center;
+	padding: 15px;
+}
+
+.judulpremium{
+	font-size: 18px;
+	text-align: center;
+	align-self: center;
+	line-height: 40px;
+	background-color: #fafa8e;
+	padding: 30px;
+}
+
+.judulpro{
+	font-size: 18px;
+	text-align: center;
+	align-self: center;
+	line-height: 40px;
+	background-color: #8196eb;
+	padding: 30px;
+}
+
+.isibasic, .isipremium, .isipro{
+	text-align: center;
+	padding: 30px;
+	line-height: 40px;
+	font-size: 18px;
+	background-color: #f2f2f2;
+}
+
+.offline{
+	display: grid;
+	grid-template-columns: 60% auto;
+	align-items: center;
+	background-color: #e8e8e8;
+	padding: 30px;
+}
+
+.juduloffline{
+	font-size: 20px;
+	line-height: 30px;
+	padding: 50px;
+}
+
+.juduloffline h1{
+	font-size: 40px;
+	font-weight: bolder;
+	line-height: 40px;
+	padding-bottom: 20px;
+}
+
+.juduloffline a{
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+
+.juduloffline a:hover{
+	color: #8f8f8f;
+	text-decoration: underline;
+}
+
+.gambarkelas{
+	padding-right: 50px;
+}
+
+.gambarkelas img{
+	width: 500px;
+}
+
+
+.footer{
+	width: 100%;
+	height: auto;
+	background-color: #303030;
+	display: grid;
+    grid-template-columns:  auto auto auto auto auto;
+    justify-content: left;
+ 	align-content: center;
+ 	vertical-align: middle;
+ 	color: white;
+}
+
+
+.logokotak{
+	align-self: center;
+	margin: 30px;
+}
+
+.logokotak img{
+	width: 150px;
+}
+
+.findus{
+	padding: 30px;
+	text-align: left;
+	line-height: 20px;
+	vertical-align: middle;
+	font-size: 14px;
+	
+}
+
+.findus h1{
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+.maps{
+	padding: 20px;
+	align-self: center;
+	height: auto;
+}
+
+.aboutfooter{
+	padding: 30px;
+	text-align: left;
+	line-height: 20px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.aboutfooter h1{
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+.subscribe{
+	padding: 30px;
+	text-align: left;
+	line-height: 20px;
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.subscribe h1{
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: bolder;
+	margin-bottom: 20px;
+}
+
+.emailsubs{
+	border-style: none;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.submitsubs{
+	background-color: transparent;
+	border-style: none;
+	padding: 10px;
+	font-size: 30px;
+	color: white;
+}
+
+.submitsubs:hover{
+	cursor: pointer;
+	color: #dbdbdb;
+}
